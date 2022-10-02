@@ -1,0 +1,64 @@
+@import '~normalize.css';
+@import 'font.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.start {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+* {
+  border: 1px solid black;
+}
+.grid {
+  padding: 2.5rem;
+  width: 500px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+.cell-tracking {
+  cursor: pointer;
+}
+.cell,
+.cell-tracking {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.sea {
+  background-color: aqua;
+}
+[data-ship='ship'] {
+  background-color: darkslategrey;
+}
+.destroyed {
+  background-color: red;
+}
+.span {
+  display: none;
+  border: none;
+  font-size: xx-large;
+}
+
+button {
+  cursor: pointer;
+  background-color: blue;
+  width: 100px;
+  height: 50px;
+}
+
+.computerfield {
+  display: flex;
+}
+
+.playersfield {
+  display: flex;
+}
